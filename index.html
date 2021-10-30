@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curva HH</title>
+
+    <script src="assets\highcharts.js"></script>
+    <script src="assets\series-label.js"></script>
+    <script src="assets\exporting.js"></script>
+    <script src="assets\export-data.js"></script>
+    <script src="assets\accessibility.js"></script>
+
+    <link rel="stylesheet" href="./grafica.css" />
+  </head>
+  <body>
+    <p>HH:<input id="HH" type="text" value="1000" /></p>
+    <p><span>Intervalos:</span><input id="n" type="text" value="1000" /></p>
+    <p>
+      <span>Achatar o afilar curva [0 a 100%]:</span
+      ><input id="S0" type="text" value="20" />
+    </p>
+    <p>Posición del gauss [0 a 100%]:<input id="c" type="text" value="60" /></p>
+
+    <input type="button" value="calcular" onclick="change()" />
+    <!-------html de graficas----------------------------------------->
+    <figure class="highcharts-figure">
+      <div id="gauss"></div>
+    </figure>
+
+    <figure class="highcharts-figure">
+      <div id="gaussAcum"></div>
+    </figure>
+    <!-------------------------------------html de graficas----------->
+
+    <!--------------scripts propios---------------------------------->
+
+    <!-------------------------------------scripts propios----------->
+
+    <!--------------graficas--------------------------->
+
+    <script src="./biseccion.js"></script>
+    <script src="./graficas.js"></script>
+
+    <!-----------------------------graficas------------>
+  </body>
+</html>
